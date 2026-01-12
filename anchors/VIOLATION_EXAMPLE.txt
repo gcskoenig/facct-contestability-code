@@ -1,0 +1,136 @@
+================================================================================
+ANCHOR VIOLATION EXAMPLE: Decision Tree, Test Index 91
+================================================================================
+
+This file documents a concrete example where the model's anchor explanation
+contradicts the ground truth data, proving the model makes systematic errors.
+
+Generated: 2026-01-05
+Model: Decision Tree
+Dataset: German Credit (UCI/OpenML)
+
+================================================================================
+SUMMARY
+================================================================================
+
+The Decision Tree predicts "Bad Credit" for a customer, but we can prove this
+prediction is systematically wrong by comparing:
+
+1. MODEL ANCHOR: Region where model predicts Bad Credit (75% precision)
+2. GT ANCHOR: Region where ground truth shows Good Credit (90% precision)
+
+The overlap between these regions exceeds what the model's precision allows,
+proving the model is making errors.
+
+================================================================================
+MODEL ANCHOR (Decision Tree predicts Bad Credit)
+================================================================================
+
+Encoded Rules:
+  - credit_amount <= 1329.00
+  - credit_history > 1.00
+  - own_telephone <= 0.00
+  - 3.00 < purpose <= 4.00
+  - savings_status <= 2.00
+
+Precision: 0.7523 (75.2% of samples in this region are Bad Credit)
+Samples in anchor: 48
+
+PLAIN LANGUAGE INTERPRETATION:
+
+The model predicts Bad Credit when ALL of the following apply:
+  - SMALL LOAN: Credit amount is at most 1,329 DM
+  - CREDIT HISTORY: "delayed previously", "existing paid", or "no credits/all paid"
+  - NO TELEPHONE: Customer has no registered telephone
+  - PURPOSE: Loan is for buying a NEW CAR
+  - LOW SAVINGS: Less than 1,000 DM in savings account
+
+Feature Encodings Used:
+  credit_history:  2=delayed previously, 3=existing paid, 4=no credits/all paid
+  own_telephone:   0=none, 1=yes
+  purpose:         4=new car
+  savings_status:  0=100-500 DM, 1=500-1000 DM, 2=<100 DM
+
+================================================================================
+GROUND TRUTH ANCHOR (Data shows Good Credit)
+================================================================================
+
+Encoded Rules:
+  - checking_status >= 2.00
+  - other_payment_plans = 1.00
+
+Precision: 0.9003 (90% of samples in this region are Good Credit)
+Samples in anchor: 311
+
+PLAIN LANGUAGE INTERPRETATION:
+
+The ground truth data shows Good Credit when BOTH of the following apply:
+  - STABLE CHECKING: Balance >= 200 DM, OR no checking account
+  - NO OTHER DEBTS: No other installment plans at banks or stores
+
+Feature Encodings Used:
+  checking_status:      2=>=200 DM, 3=no checking account
+  other_payment_plans:  0=bank, 1=none, 2=stores
+
+================================================================================
+THE VIOLATION
+================================================================================
+
+Model Anchor Stats:
+  - 48 samples match the model's "Bad Credit" rules
+  - Model claims 75.2% precision
+  - Therefore, at most 48 x (1 - 0.752) = 11.9 samples can be Good Credit
+
+Ground Truth Overlap:
+  - 15 samples fall in BOTH the model anchor AND the GT positive anchor
+  - These 15 samples are in a region that is 90% Good Credit
+
+Violation:
+  - Model allows at most 11.9 Good Credit samples
+  - But we found 15 samples in a 90% Good Credit region
+  - 15 > 11.9 --> VIOLATION!
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+The model is OVERLY PESSIMISTIC about customers who:
+  - Take small loans for new cars
+  - Have low savings
+  - Have no telephone
+  - Have certain credit histories
+
+The model IGNORES important positive signals:
+  - Having a stable checking account (>= 200 DM) or no checking account
+  - Having no other installment debts
+
+When these positive signals are present, the customer is actually 90% likely
+to have Good Credit, but the model still predicts Bad Credit.
+
+This represents a systematic error that could lead to unfair credit denials
+for customers who are actually creditworthy.
+
+================================================================================
+FILE LOCATIONS
+================================================================================
+
+Results are stored in the anchors/ folder:
+
+  anchors/
+  ├── run_anchors.py                    # Main analysis script
+  ├── README.txt                        # Documentation
+  ├── VIOLATION_EXAMPLE.txt             # This file
+  ├── anchor_results_decision_tree.json # Full results (JSON, machine-readable)
+  ├── anchor_results_random_forest.json # Full results for RF model
+  ├── anchor_report_decision_tree.txt   # Human-readable report
+  └── anchor_report_random_forest.txt   # Human-readable report for RF model
+
+To reproduce:
+  python anchors/run_anchors.py
+
+Configuration (in run_anchors.py):
+  DELTA = 0.1          # GT anchor precision threshold (90%)
+  MAX_GT_RULES = 2     # Maximum rules in GT anchor
+  MIN_SAMPLES_IN_BOX = 5
+
+================================================================================

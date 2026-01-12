@@ -1,0 +1,77 @@
+======================================================================
+MODEL DESCRIPTION
+======================================================================
+
+Generated: 2026-01-07 18:51:55
+Random seed: 42
+
+DATASET
+----------------------------------------------------------------------
+German Credit dataset (OpenML data_id=31)
+  - Total samples: 1000
+  - Features: 20
+  - Train/Test split: 800/200 (80/20)
+  - Target: Good Credit (1) vs Bad Credit (0)
+  - Class distribution: Good=700, Bad=300
+
+MODEL 1: RANDOM FOREST
+----------------------------------------------------------------------
+Purpose: Main model for production-like predictions
+Training: GridSearchCV with 3-fold cross-validation
+Best hyperparameters:
+  - max_depth: None
+  - min_samples_split: 2
+  - n_estimators: 50
+Performance:
+  - Train accuracy: 1.0000
+  - Test accuracy: 0.7400
+  - False negatives (test): 17
+  - False negative indices: [1, 2, 25, 46, 77, 78, 84, 86, 108, 121, 135, 140, 151, 159, 160, 163, 186]
+
+MODEL 2: DECISION TREE (default)
+----------------------------------------------------------------------
+Purpose: Unstable model to detect overfitting/violations
+Training: Default parameters (no constraints)
+Hyperparameters:
+  - max_depth: None (unlimited)
+  - min_samples_split: 2
+  - min_samples_leaf: 1
+  - random_state: 42
+Tree statistics:
+  - Depth: 16
+  - Number of leaves: 163
+Performance:
+  - Train accuracy: 1.0000
+  - Test accuracy: 0.6800
+  - False negatives (test): 37
+  - False negative indices: [0, 1, 5, 9, 10, 14, 16, 20, 25, 35, 44, 46, 56, 59, 73, 75, 77, 80, 82, 91, 95, 113, 115, 125, 126, 133, 135, 140, 142, 146, 151, 159, 160, 177, 186, 192, 196]
+
+USAGE
+----------------------------------------------------------------------
+To load models in other scripts:
+
+```python
+import pickle
+import json
+
+# Load models
+with open('model/random_forest.pkl', 'rb') as f:
+    rf_model = pickle.load(f)
+with open('model/decision_tree.pkl', 'rb') as f:
+    dt_model = pickle.load(f)
+
+# Load data splits
+with open('model/data_splits.pkl', 'rb') as f:
+    data = pickle.load(f)
+X_train, X_test = data['X_train'], data['X_test']
+y_train, y_test = data['y_train'], data['y_test']
+feature_names = data['feature_names']
+
+# Load false negative indices
+with open('model/false_negatives.json', 'r') as f:
+    fn_indices = json.load(f)
+```
+
+======================================================================
+END OF MODEL DESCRIPTION
+======================================================================

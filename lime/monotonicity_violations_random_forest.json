@@ -1,0 +1,134 @@
+{
+  "sign_inconsistencies": [
+    {
+      "feature": "installment_commitment",
+      "n_positive": 4,
+      "n_negative": 6,
+      "inconsistency_ratio": 0.23529411764705882,
+      "mean_weight": -0.006154529575582342,
+      "std_weight": 0.015889686311187656
+    },
+    {
+      "feature": "housing",
+      "n_positive": 3,
+      "n_negative": 3,
+      "inconsistency_ratio": 0.17647058823529413,
+      "mean_weight": -0.0017357189890505982,
+      "std_weight": 0.01396318034228376
+    },
+    {
+      "feature": "credit_amount",
+      "n_positive": 5,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.0009989596451164592,
+      "std_weight": 0.012274939187892159
+    },
+    {
+      "feature": "employment",
+      "n_positive": 2,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": -0.001990581274656374,
+      "std_weight": 0.010941565106084948
+    },
+    {
+      "feature": "personal_status",
+      "n_positive": 5,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.0030638350575673125,
+      "std_weight": 0.014298540548914546
+    },
+    {
+      "feature": "residence_since",
+      "n_positive": 6,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.005499745808374366,
+      "std_weight": 0.014431841378777592
+    },
+    {
+      "feature": "property_magnitude",
+      "n_positive": 2,
+      "n_negative": 3,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.0013899571245019606,
+      "std_weight": 0.011144084680759251
+    },
+    {
+      "feature": "existing_credits",
+      "n_positive": 5,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.0030880654837056585,
+      "std_weight": 0.010506128804495599
+    },
+    {
+      "feature": "own_telephone",
+      "n_positive": 4,
+      "n_negative": 2,
+      "inconsistency_ratio": 0.11764705882352941,
+      "mean_weight": 0.0018940671591286804,
+      "std_weight": 0.0105307680826137
+    },
+    {
+      "feature": "num_dependents",
+      "n_positive": 1,
+      "n_negative": 1,
+      "inconsistency_ratio": 0.058823529411764705,
+      "mean_weight": 0.0023802687459071386,
+      "std_weight": 0.004497764201408908
+    }
+  ],
+  "high_variance_features": [
+    {
+      "feature": "personal_status",
+      "mean_weight": 0.003064,
+      "std_weight": 0.014299,
+      "cv": 3.5184547244094486
+    },
+    {
+      "feature": "installment_commitment",
+      "mean_weight": -0.006155,
+      "std_weight": 0.01589,
+      "cv": 2.2208245981830887
+    },
+    {
+      "feature": "residence_since",
+      "mean_weight": 0.0055,
+      "std_weight": 0.014432,
+      "cv": 2.2203076923076925
+    },
+    {
+      "feature": "credit_history",
+      "mean_weight": -0.007044,
+      "std_weight": 0.015732,
+      "cv": 1.9557434112381902
+    },
+    {
+      "feature": "purpose",
+      "mean_weight": 0.01056,
+      "std_weight": 0.010509,
+      "cv": 0.9090830449826989
+    },
+    {
+      "feature": "age",
+      "mean_weight": 0.014442,
+      "std_weight": 0.012726,
+      "cv": 0.8241160471441522
+    },
+    {
+      "feature": "duration",
+      "mean_weight": -0.014804,
+      "std_weight": 0.012897,
+      "cv": 0.8160592255125286
+    },
+    {
+      "feature": "checking_status",
+      "mean_weight": 0.018456,
+      "std_weight": 0.015757,
+      "cv": 0.8098787006578947
+    }
+  ]
+}

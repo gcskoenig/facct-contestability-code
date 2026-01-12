@@ -1,0 +1,103 @@
+
+Analyzing 17 false negatives...
+Distance metric: Normalized Euclidean (features divided by std)
+  Processing 10/17...
+
+======================================================================
+TOP CONTINUITY VIOLATIONS
+(Low distance + low confidence = strong violation)
+======================================================================
+
+Rank 1: Test instance 163
+  P(Good Credit) = 0.5000
+  Distance to counterfactual: 0.0105
+  Features changed: 1
+  Violation score: 0.005341
+  True label: Good Credit
+  Changes:
+    credit_amount: 1721.00 -> 1750.00
+
+Rank 2: Test instance 1
+  P(Good Credit) = 0.4800
+  Distance to counterfactual: 0.0148
+  Features changed: 1
+  Violation score: 0.007255
+  True label: Good Credit
+  Changes:
+    credit_amount: 3990.00 -> 3949.00
+
+Rank 3: Test instance 84
+  P(Good Credit) = 0.5000
+  Distance to counterfactual: 0.0177
+  Features changed: 1
+  Violation score: 0.009024
+  True label: Good Credit
+  Changes:
+    credit_amount: 2171.00 -> 2122.00
+
+Rank 4: Test instance 78
+  P(Good Credit) = 0.5000
+  Distance to counterfactual: 0.0603
+  Features changed: 1
+  Violation score: 0.030755
+  True label: Good Credit
+  Changes:
+    credit_amount: 2121.00 -> 2288.00
+
+Rank 5: Test instance 46
+  P(Good Credit) = 0.5000
+  Distance to counterfactual: 0.0704
+  Features changed: 1
+  Violation score: 0.035912
+  True label: Good Credit
+  Changes:
+    credit_amount: 2333.00 -> 2528.00
+
+Rank 6: Test instance 140
+  P(Good Credit) = 0.4600
+  Distance to counterfactual: 0.0823
+  Features changed: 1
+  Violation score: 0.038694
+  True label: Good Credit
+  Changes:
+    duration: 12.00 -> 11.00
+
+Rank 7: Test instance 135
+  P(Good Credit) = 0.4800
+  Distance to counterfactual: 0.0823
+  Features changed: 1
+  Violation score: 0.040340
+  True label: Good Credit
+  Changes:
+    duration: 12.00 -> 11.00
+
+Rank 8: Test instance 151
+  P(Good Credit) = 0.5000
+  Distance to counterfactual: 0.0879
+  Features changed: 1
+  Violation score: 0.044852
+  True label: Good Credit
+  Changes:
+    age: 30.00 -> 29.00
+
+Rank 9: Test instance 77
+  P(Good Credit) = 0.4800
+  Distance to counterfactual: 0.1759
+  Features changed: 1
+  Violation score: 0.086187
+  True label: Good Credit
+  Changes:
+    age: 24.00 -> 22.00
+
+Rank 10: Test instance 2
+  P(Good Credit) = 0.4800
+  Distance to counterfactual: 0.2470
+  Features changed: 1
+  Violation score: 0.121021
+  True label: Good Credit
+  Changes:
+    duration: 48.00 -> 45.00
+
+Results saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/counterfactuals/counterfactual_results_random_forest.json
+Counterfactuals saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/counterfactuals/counterfactuals_random_forest.csv
+Violations saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/counterfactuals/violations_random_forest.csv

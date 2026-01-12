@@ -1,0 +1,586 @@
+{
+  "model_anchor": {
+    "rules": [
+      "checking_status <= 1.50",
+      "duration > 11.50",
+      "duration > 31.50"
+    ],
+    "features": [
+      "checking_status",
+      "duration"
+    ],
+    "support": 83,
+    "precision": 1.0,
+    "true_positive_rate": 0.3493975903614458,
+    "threshold": 0.0
+  },
+  "gt_anchors": [
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "35.00 <= age <= 65.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          65.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00875,
+      "n_samples": 7,
+      "n_positive": 7,
+      "overlap": 5,
+      "overlap_pct": 71.42857142857143,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "35.00 <= age <= 74.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          74.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00875,
+      "n_samples": 7,
+      "n_positive": 7,
+      "overlap": 5,
+      "overlap_pct": 71.42857142857143,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "35.00 <= age <= 60.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          60.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.0075,
+      "n_samples": 6,
+      "n_positive": 6,
+      "overlap": 4,
+      "overlap_pct": 66.66666666666666,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "35.00 <= age <= 55.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          55.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 4,
+      "overlap_pct": 80.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "40.00 <= age <= 65.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          40.0,
+          65.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 4,
+      "overlap_pct": 80.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "40.00 <= age <= 74.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          40.0,
+          74.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 4,
+      "overlap_pct": 80.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "40.00 <= duration <= 47.00",
+        "41.00 <= age <= 65.00"
+      ],
+      "bounds": {
+        "1": [
+          40.0,
+          47.0
+        ],
+        "12": [
+          41.0,
+          65.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 4,
+      "overlap_pct": 80.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "27.00 <= duration <= 47.00",
+        "2273.00 <= credit_amount <= 2345.80"
+      ],
+      "bounds": {
+        "1": [
+          27.0,
+          47.0
+        ],
+        "4": [
+          2273.0,
+          2345.8
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 3,
+      "overlap_pct": 60.0,
+      "features_used": [
+        "duration",
+        "credit_amount"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "27.00 <= duration <= 40.00",
+        "2273.00 <= credit_amount <= 2345.80"
+      ],
+      "bounds": {
+        "1": [
+          27.0,
+          40.0
+        ],
+        "4": [
+          2273.0,
+          2345.8
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 3,
+      "overlap_pct": 60.0,
+      "features_used": [
+        "duration",
+        "credit_amount"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "27.00 <= duration <= 60.00",
+        "2273.00 <= credit_amount <= 2345.80"
+      ],
+      "bounds": {
+        "1": [
+          27.0,
+          60.0
+        ],
+        "4": [
+          2273.0,
+          2345.8
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 3,
+      "overlap_pct": 60.0,
+      "features_used": [
+        "duration",
+        "credit_amount"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "55.20 <= duration <= 60.00",
+        "installment_commitment <= 2.00"
+      ],
+      "bounds": {
+        "1": [
+          55.199999999999974,
+          60.0
+        ],
+        "7": [
+          1.0,
+          2.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "installment_commitment"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "60.00 <= duration <= 60.00",
+        "installment_commitment <= 2.00"
+      ],
+      "bounds": {
+        "1": [
+          60.0,
+          60.0
+        ],
+        "7": [
+          1.0,
+          2.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "installment_commitment"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "36.00 <= duration <= 55.20",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          36.0,
+          55.199999999999974
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "33.00 <= duration <= 47.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          33.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "36.00 <= duration <= 48.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          36.0,
+          48.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "27.00 <= duration <= 47.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          27.0,
+          47.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "33.00 <= duration <= 60.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          33.0,
+          60.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.0075,
+      "n_samples": 6,
+      "n_positive": 6,
+      "overlap": 2,
+      "overlap_pct": 33.33333333333333,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "27.00 <= duration <= 60.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          27.0,
+          60.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.0075,
+      "n_samples": 6,
+      "n_positive": 6,
+      "overlap": 2,
+      "overlap_pct": 33.33333333333333,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "36.00 <= duration <= 60.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "1": [
+          36.0,
+          60.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.00625,
+      "n_samples": 5,
+      "n_positive": 5,
+      "overlap": 2,
+      "overlap_pct": 40.0,
+      "features_used": [
+        "duration",
+        "age"
+      ],
+      "includes_model_feature": "duration"
+    },
+    {
+      "rules": [
+        "checking_status <= 0.00",
+        "35.00 <= age <= 35.00"
+      ],
+      "bounds": {
+        "0": [
+          0.0,
+          0.0
+        ],
+        "12": [
+          35.0,
+          35.0
+        ]
+      },
+      "precision": 1.0,
+      "coverage": 0.0075,
+      "n_samples": 6,
+      "n_positive": 6,
+      "overlap": 1,
+      "overlap_pct": 16.666666666666664,
+      "features_used": [
+        "checking_status",
+        "age"
+      ],
+      "includes_model_feature": "checking_status"
+    }
+  ],
+  "best_example": {
+    "rules": [
+      "40.00 <= duration <= 47.00",
+      "35.00 <= age <= 65.00"
+    ],
+    "bounds": {
+      "1": [
+        40.0,
+        47.0
+      ],
+      "12": [
+        35.0,
+        65.0
+      ]
+    },
+    "precision": 1.0,
+    "coverage": 0.00875,
+    "n_samples": 7,
+    "n_positive": 7,
+    "overlap": 5,
+    "overlap_pct": 71.42857142857143,
+    "features_used": [
+      "duration",
+      "age"
+    ],
+    "includes_model_feature": "duration"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "model_anchor": {
+    "rules": [
+      "checking_status <= 1.50",
+      "duration > 11.50",
+      "duration > 31.50"
+    ],
+    "support": 83,
+    "precision": 1.0,
+    "true_positive_rate": 0.3493975903614458,
+    "threshold": 0.0
+  },
+  "results": [
+    {
+      "test_idx": 1,
+      "gt_rules": [
+        "3972.00 <= credit_amount <= 4042.00",
+        "age <= 44.00"
+      ],
+      "gt_support": "6",
+      "gt_precision": 1.0,
+      "gt_true_pos": 1.0,
+      "overlap": "1",
+      "overlap_pct": 16.666666666666664,
+      "violation": "True"
+    },
+    {
+      "test_idx": 2,
+      "gt_rules": [
+        "savings_status >= 3.00",
+        "41.00 <= age <= 50.00"
+      ],
+      "gt_support": "32",
+      "gt_precision": 0.9523809523809523,
+      "gt_true_pos": 0.96875,
+      "overlap": "2",
+      "overlap_pct": 6.25,
+      "violation": "True"
+    },
+    {
+      "test_idx": 48,
+      "gt_rules": [
+        "2.00 <= credit_history <= 2.00",
+        "31.00 <= age <= 39.00"
+      ],
+      "gt_support": "18",
+      "gt_precision": 0.96,
+      "gt_true_pos": 0.9444444444444444,
+      "overlap": "2",
+      "overlap_pct": 11.11111111111111,
+      "violation": "True"
+    },
+    {
+      "test_idx": 71,
+      "gt_rules": [
+        "2.00 <= credit_history <= 2.00",
+        "31.00 <= age <= 39.00"
+      ],
+      "gt_support": "18",
+      "gt_precision": 0.96,
+      "gt_true_pos": 0.9444444444444444,
+      "overlap": "2",
+      "overlap_pct": 11.11111111111111,
+      "violation": "True"
+    },
+    {
+      "test_idx": 86,
+      "gt_rules": [
+        "purpose >= 5.00",
+        "43.00 <= age <= 43.00"
+      ],
+      "gt_support": "4",
+      "gt_precision": 1.0,
+      "gt_true_pos": 1.0,
+      "overlap": "0",
+      "overlap_pct": 0.0,
+      "violation": "False"
+    },
+    {
+      "test_idx": 129,
+      "gt_rules": [
+        "duration <= 47.00",
+        "3556.00 <= credit_amount <= 3914.00"
+      ],
+      "gt_support": "34",
+      "gt_precision": 0.9545454545454546,
+      "gt_true_pos": 0.9705882352941176,
+      "overlap": "1",
+      "overlap_pct": 2.941176470588235,
+      "violation": "True"
+    },
+    {
+      "test_idx": 137,
+      "gt_rules": [
+        "duration <= 60.00",
+        "5248.00 <= credit_amount <= 5866.00"
+      ],
+      "gt_support": "13",
+      "gt_precision": 0.95,
+      "gt_true_pos": 1.0,
+      "overlap": "3",
+      "overlap_pct": 23.076923076923077,
+      "violation": "True"
+    },
+    {
+      "test_idx": 151,
+      "gt_rules": [
+        "2675.00 <= credit_amount <= 3059.00",
+        "property_magnitude >= 2.00"
+      ],
+      "gt_support": "21",
+      "gt_precision": 0.9629629629629629,
+      "gt_true_pos": 1.0,
+      "overlap": "0",
+      "overlap_pct": 0.0,
+      "violation": "False"
+    },
+    {
+      "test_idx": 160,
+      "gt_rules": [
+        "4771.00 <= credit_amount <= 4811.00"
+      ],
+      "gt_support": "3",
+      "gt_precision": 1.0,
+      "gt_true_pos": 1.0,
+      "overlap": "1",
+      "overlap_pct": 33.33333333333333,
+      "violation": "True"
+    },
+    {
+      "test_idx": 167,
+      "gt_rules": [
+        "7166.00 <= credit_amount <= 7485.00",
+        "installment_commitment <= 3.00"
+      ],
+      "gt_support": "5",
+      "gt_precision": 1.0,
+      "gt_true_pos": 1.0,
+      "overlap": "1",
+      "overlap_pct": 20.0,
+      "violation": "True"
+    }
+  ],
+  "best_example": {
+    "test_idx": 137,
+    "gt_rules": [
+      "duration <= 60.00",
+      "5248.00 <= credit_amount <= 5866.00"
+    ],
+    "gt_support": "13",
+    "gt_precision": 0.95,
+    "gt_true_pos": 1.0,
+    "overlap": "3",
+    "overlap_pct": 23.076923076923077,
+    "violation": "True"
+  }
+}

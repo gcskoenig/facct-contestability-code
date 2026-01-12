@@ -1,0 +1,286 @@
+{
+  "sign_inconsistencies": [
+    {
+      "feature": "installment_commitment",
+      "n_positive": 16,
+      "n_negative": 15,
+      "inconsistency_ratio": 0.40540540540540543,
+      "mean_weight": -0.001535392670047156,
+      "std_weight": 0.03822913927559125
+    },
+    {
+      "feature": "residence_since",
+      "n_positive": 14,
+      "n_negative": 15,
+      "inconsistency_ratio": 0.3783783783783784,
+      "mean_weight": 0.0015815639910868344,
+      "std_weight": 0.0305199708247251
+    },
+    {
+      "feature": "purpose",
+      "n_positive": 13,
+      "n_negative": 13,
+      "inconsistency_ratio": 0.35135135135135137,
+      "mean_weight": 0.0020514524301598527,
+      "std_weight": 0.029072100790645896
+    },
+    {
+      "feature": "property_magnitude",
+      "n_positive": 13,
+      "n_negative": 14,
+      "inconsistency_ratio": 0.35135135135135137,
+      "mean_weight": -0.0019296188601944518,
+      "std_weight": 0.03214765571103873
+    },
+    {
+      "feature": "housing",
+      "n_positive": 12,
+      "n_negative": 16,
+      "inconsistency_ratio": 0.32432432432432434,
+      "mean_weight": -0.009741313906349653,
+      "std_weight": 0.03891859020125999
+    },
+    {
+      "feature": "credit_history",
+      "n_positive": 11,
+      "n_negative": 16,
+      "inconsistency_ratio": 0.2972972972972973,
+      "mean_weight": -0.004068618219229772,
+      "std_weight": 0.02860595546180465
+    },
+    {
+      "feature": "credit_amount",
+      "n_positive": 13,
+      "n_negative": 11,
+      "inconsistency_ratio": 0.2972972972972973,
+      "mean_weight": 0.0038540108601323167,
+      "std_weight": 0.03557700826468902
+    },
+    {
+      "feature": "own_telephone",
+      "n_positive": 21,
+      "n_negative": 11,
+      "inconsistency_ratio": 0.2972972972972973,
+      "mean_weight": 0.010915472217726235,
+      "std_weight": 0.03333178172666086
+    },
+    {
+      "feature": "employment",
+      "n_positive": 10,
+      "n_negative": 19,
+      "inconsistency_ratio": 0.2702702702702703,
+      "mean_weight": -0.0061907230212200366,
+      "std_weight": 0.03413485814646732
+    },
+    {
+      "feature": "personal_status",
+      "n_positive": 18,
+      "n_negative": 10,
+      "inconsistency_ratio": 0.2702702702702703,
+      "mean_weight": 0.010715495521103159,
+      "std_weight": 0.038396909794094894
+    },
+    {
+      "feature": "age",
+      "n_positive": 21,
+      "n_negative": 10,
+      "inconsistency_ratio": 0.2702702702702703,
+      "mean_weight": 0.015327467737243352,
+      "std_weight": 0.03840872326645881
+    },
+    {
+      "feature": "checking_status",
+      "n_positive": 21,
+      "n_negative": 9,
+      "inconsistency_ratio": 0.24324324324324326,
+      "mean_weight": 0.016668499297729775,
+      "std_weight": 0.03331899132619959
+    },
+    {
+      "feature": "savings_status",
+      "n_positive": 19,
+      "n_negative": 8,
+      "inconsistency_ratio": 0.21621621621621623,
+      "mean_weight": 0.008870784774518648,
+      "std_weight": 0.028507745617520962
+    },
+    {
+      "feature": "existing_credits",
+      "n_positive": 21,
+      "n_negative": 8,
+      "inconsistency_ratio": 0.21621621621621623,
+      "mean_weight": 0.006437112882624174,
+      "std_weight": 0.027167149512531276
+    },
+    {
+      "feature": "job",
+      "n_positive": 7,
+      "n_negative": 15,
+      "inconsistency_ratio": 0.1891891891891892,
+      "mean_weight": -0.009992450061873626,
+      "std_weight": 0.02867606149688239
+    },
+    {
+      "feature": "duration",
+      "n_positive": 6,
+      "n_negative": 19,
+      "inconsistency_ratio": 0.16216216216216217,
+      "mean_weight": -0.012899138366639588,
+      "std_weight": 0.02849381554527489
+    },
+    {
+      "feature": "other_payment_plans",
+      "n_positive": 13,
+      "n_negative": 6,
+      "inconsistency_ratio": 0.16216216216216217,
+      "mean_weight": 0.009978552078203825,
+      "std_weight": 0.03270654045615875
+    },
+    {
+      "feature": "num_dependents",
+      "n_positive": 16,
+      "n_negative": 4,
+      "inconsistency_ratio": 0.10810810810810811,
+      "mean_weight": 0.008175673486409055,
+      "std_weight": 0.02140351200510485
+    },
+    {
+      "feature": "other_parties",
+      "n_positive": 2,
+      "n_negative": 14,
+      "inconsistency_ratio": 0.05405405405405406,
+      "mean_weight": -0.009843998514950906,
+      "std_weight": 0.014818259715502977
+    },
+    {
+      "feature": "foreign_worker",
+      "n_positive": 2,
+      "n_negative": 10,
+      "inconsistency_ratio": 0.05405405405405406,
+      "mean_weight": -0.007515804352431066,
+      "std_weight": 0.013501249530224899
+    }
+  ],
+  "high_variance_features": [
+    {
+      "feature": "installment_commitment",
+      "mean_weight": -0.001535,
+      "std_weight": 0.038229,
+      "cv": 15.080473372781066
+    },
+    {
+      "feature": "residence_since",
+      "mean_weight": 0.001582,
+      "std_weight": 0.03052,
+      "cv": 11.820294345468628
+    },
+    {
+      "feature": "property_magnitude",
+      "mean_weight": -0.00193,
+      "std_weight": 0.032148,
+      "cv": 10.972013651877132
+    },
+    {
+      "feature": "purpose",
+      "mean_weight": 0.002051,
+      "std_weight": 0.029072,
+      "cv": 9.528679121599476
+    },
+    {
+      "feature": "credit_amount",
+      "mean_weight": 0.003854,
+      "std_weight": 0.035577,
+      "cv": 7.329419035846724
+    },
+    {
+      "feature": "credit_history",
+      "mean_weight": -0.004069,
+      "std_weight": 0.028606,
+      "cv": 5.643322154271059
+    },
+    {
+      "feature": "employment",
+      "mean_weight": -0.006191,
+      "std_weight": 0.034135,
+      "cv": 4.7469058545403975
+    },
+    {
+      "feature": "existing_credits",
+      "mean_weight": 0.006437,
+      "std_weight": 0.027167,
+      "cv": 3.652951458921608
+    },
+    {
+      "feature": "housing",
+      "mean_weight": -0.009741,
+      "std_weight": 0.038919,
+      "cv": 3.623405641932781
+    },
+    {
+      "feature": "personal_status",
+      "mean_weight": 0.010715,
+      "std_weight": 0.038397,
+      "cv": 3.277592829705506
+    },
+    {
+      "feature": "other_payment_plans",
+      "mean_weight": 0.009979,
+      "std_weight": 0.032707,
+      "cv": 2.979050915383915
+    },
+    {
+      "feature": "savings_status",
+      "mean_weight": 0.008871,
+      "std_weight": 0.028508,
+      "cv": 2.8880559213858774
+    },
+    {
+      "feature": "own_telephone",
+      "mean_weight": 0.010915,
+      "std_weight": 0.033332,
+      "cv": 2.7974821653378097
+    },
+    {
+      "feature": "job",
+      "mean_weight": -0.009992,
+      "std_weight": 0.028676,
+      "cv": 2.6088064046579333
+    },
+    {
+      "feature": "age",
+      "mean_weight": 0.015327,
+      "std_weight": 0.038409,
+      "cv": 2.352483616096037
+    },
+    {
+      "feature": "num_dependents",
+      "mean_weight": 0.008176,
+      "std_weight": 0.021404,
+      "cv": 2.332606800348736
+    },
+    {
+      "feature": "duration",
+      "mean_weight": -0.012899,
+      "std_weight": 0.028494,
+      "cv": 2.0500755450032373
+    },
+    {
+      "feature": "checking_status",
+      "mean_weight": 0.016668,
+      "std_weight": 0.033319,
+      "cv": 1.8858388046185195
+    },
+    {
+      "feature": "foreign_worker",
+      "mean_weight": -0.007516,
+      "std_weight": 0.013501,
+      "cv": 1.5853687177078444
+    },
+    {
+      "feature": "other_parties",
+      "mean_weight": -0.009844,
+      "std_weight": 0.014818,
+      "cv": 1.366469937292512
+    }
+  ]
+}

@@ -1,0 +1,1569 @@
+================================================================================
+ FULL ANCHOR ANALYSIS FOR ALL FALSE NEGATIVES
+================================================================================
+Generated: 2026-01-08 11:58:47
+GT anchor precision threshold: 95%
+Minimum GT anchor support: 5
+
+For each false negative, we:
+1. Extract the model anchor (decision rules)
+2. Find GT anchors that use at least one model feature
+3. Check if overlap exceeds error budget (support * (1-precision))
+
+
+================================================================================
+ SHALLOW_TREE 
+================================================================================
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #1 (Test Index: 1)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #2 (Test Index: 2)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #3 (Test Index: 48)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #4 (Test Index: 71)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #5 (Test Index: 86)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #6 (Test Index: 129)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #7 (Test Index: 137)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #8 (Test Index: 151)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #9 (Test Index: 160)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #10 (Test Index: 167)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  Features: ['checking_status', 'duration']
+  Support: 83
+  Model predicts negative: 100.0%
+  True positive rate: 34.9%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+================================================================================
+SUMMARY FOR SHALLOW_TREE
+================================================================================
+Total false negatives: 10
+With violations: 0
+
+
+================================================================================
+ RANDOM_FOREST 
+================================================================================
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #1 (Test Index: 1)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - checking_status <= 1.00
+  - personal_status <= 0.00
+  - purpose <= 4.00
+  - age <= 33.00
+  - installment_commitment > 2.00
+  - job > 1.00
+  Features: ['checking_status', 'duration', 'purpose', 'installment_commitment', 'personal_status', 'age', 'job']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #2 (Test Index: 2)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - credit_history > 3.00
+  - checking_status <= 1.00
+  - purpose <= 3.00
+  - existing_credits <= 1.00
+  - property_magnitude <= 0.00
+  - num_dependents <= 1.00
+  - 0.00 < personal_status <= 3.00
+  - credit_amount > 3870.50
+  - own_telephone > 0.00
+  - age > 41.00
+  - installment_commitment <= 4.00
+  - foreign_worker <= 1.00
+  - other_parties <= 2.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'installment_commitment', 'personal_status', 'other_parties', 'property_magnitude', 'age', 'existing_credits', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #3 (Test Index: 25)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - purpose <= 4.00
+  - credit_amount > 3870.50
+  - savings_status <= 2.00
+  - age <= 33.00
+  - existing_credits <= 1.00
+  - num_dependents <= 1.00
+  - 0.00 < own_telephone <= 1.00
+  - employment <= 0.00
+  - job <= 1.00
+  - residence_since <= 3.00
+  - installment_commitment <= 3.00
+  - other_payment_plans <= 1.00
+  - property_magnitude <= 3.00
+  - personal_status <= 3.00
+  - other_parties <= 2.00
+  - checking_status <= 3.00
+  - foreign_worker <= 1.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'personal_status', 'other_parties', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'existing_credits', 'job', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #4 (Test Index: 46)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.00
+  - duration > 18.00
+  - purpose <= 4.00
+  - employment > 1.00
+  - credit_history > 1.00
+  - 3.00 < installment_commitment <= 4.00
+  - 27.00 < age <= 33.00
+  - job > 1.00
+  - other_payment_plans <= 1.00
+  - num_dependents <= 1.00
+  - existing_credits <= 1.00
+  - foreign_worker <= 1.00
+  - 0.00 < property_magnitude <= 1.00
+  - own_telephone <= 0.00
+  - personal_status <= 3.00
+  - residence_since <= 3.00
+  - other_parties <= 2.00
+  - credit_amount <= 3870.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'employment', 'installment_commitment', 'personal_status', 'other_parties', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'existing_credits', 'job', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #5 (Test Index: 77)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 18.00
+  - checking_status <= 1.00
+  - personal_status <= 0.00
+  - purpose <= 4.00
+  - age <= 27.00
+  - savings_status <= 2.00
+  - property_magnitude > 1.00
+  - num_dependents <= 1.00
+  Features: ['checking_status', 'duration', 'purpose', 'savings_status', 'personal_status', 'property_magnitude', 'age', 'num_dependents']
+  Support: 5
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #6 (Test Index: 78)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - 0.00 < checking_status <= 1.00
+  - 3.00 < purpose <= 4.00
+  - age <= 33.00
+  - 3.00 < installment_commitment <= 4.00
+  - savings_status <= 2.00
+  - num_dependents <= 1.00
+  - residence_since <= 2.00
+  - own_telephone <= 0.00
+  - 0.00 < property_magnitude <= 1.00
+  - job <= 1.00
+  - foreign_worker <= 1.00
+  - other_parties <= 2.00
+  - personal_status <= 3.00
+  - existing_credits <= 2.00
+  - other_payment_plans <= 1.00
+  - employment <= 3.00
+  - housing <= 1.00
+  - credit_amount > 1329.00
+  Features: ['checking_status', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'personal_status', 'other_parties', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'housing', 'existing_credits', 'job', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #7 (Test Index: 84)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - 0.00 < checking_status <= 1.00
+  - 3.00 < purpose <= 4.00
+  - installment_commitment > 3.00
+  - job > 1.00
+  - savings_status <= 2.00
+  - 33.00 < age <= 41.00
+  - residence_since > 3.00
+  - property_magnitude <= 1.00
+  - own_telephone <= 0.00
+  - num_dependents <= 1.00
+  - foreign_worker <= 1.00
+  - other_payment_plans <= 1.00
+  - personal_status <= 3.00
+  - credit_amount <= 2246.50
+  - existing_credits <= 2.00
+  - employment <= 1.00
+  - housing <= 1.00
+  Features: ['checking_status', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'personal_status', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'housing', 'existing_credits', 'job', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #8 (Test Index: 86)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - 0.00 < checking_status <= 1.00
+  - savings_status <= 2.00
+  - credit_amount > 3870.50
+  - purpose <= 6.00
+  - residence_since > 2.00
+  - num_dependents <= 1.00
+  - property_magnitude <= 0.00
+  - credit_history > 1.00
+  - employment > 1.00
+  - existing_credits <= 1.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'property_magnitude', 'existing_credits', 'num_dependents']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #9 (Test Index: 108)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - age <= 27.00
+  - credit_amount > 3870.50
+  - savings_status <= 2.00
+  - purpose <= 6.00
+  - 1.00 < credit_history <= 3.00
+  - 3.00 < installment_commitment <= 4.00
+  - num_dependents <= 1.00
+  - residence_since <= 2.00
+  - existing_credits <= 1.00
+  - other_payment_plans <= 1.00
+  - employment <= 0.00
+  - property_magnitude <= 0.00
+  - other_parties <= 2.00
+  Features: ['duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'other_parties', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'existing_credits', 'num_dependents']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #10 (Test Index: 121)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - age <= 27.00
+  - purpose <= 4.00
+  - savings_status <= 2.00
+  - personal_status <= 0.00
+  - credit_amount > 2246.50
+  - 1.00 < credit_history <= 3.00
+  - employment <= 0.00
+  - num_dependents <= 1.00
+  - residence_since <= 2.00
+  - other_payment_plans <= 1.00
+  - property_magnitude <= 0.00
+  - own_telephone > 0.00
+  - 1.00 < existing_credits <= 2.00
+  - installment_commitment <= 4.00
+  - checking_status <= 3.00
+  - foreign_worker <= 1.00
+  - other_parties <= 2.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'personal_status', 'other_parties', 'residence_since', 'property_magnitude', 'age', 'other_payment_plans', 'existing_credits', 'num_dependents', 'own_telephone', 'foreign_worker']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #11 (Test Index: 135)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.00
+  - age <= 27.00
+  - 3.00 < purpose <= 4.00
+  - installment_commitment > 3.00
+  - credit_amount <= 1329.00
+  - credit_history > 1.00
+  - residence_since <= 2.00
+  - own_telephone <= 0.00
+  - job <= 1.00
+  - savings_status > 2.00
+  - existing_credits <= 1.00
+  - num_dependents <= 1.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'installment_commitment', 'residence_since', 'age', 'existing_credits', 'job', 'num_dependents', 'own_telephone']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #12 (Test Index: 140)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 0.00
+  - housing > 1.00
+  - purpose <= 4.00
+  - age <= 33.00
+  - employment > 1.00
+  - savings_status <= 2.00
+  - credit_amount > 2246.50
+  - own_telephone > 0.00
+  - num_dependents <= 1.00
+  - residence_since > 3.00
+  - job <= 1.00
+  - existing_credits > 2.00
+  - installment_commitment <= 2.00
+  - property_magnitude <= 1.00
+  Features: ['checking_status', 'purpose', 'credit_amount', 'savings_status', 'employment', 'installment_commitment', 'residence_since', 'property_magnitude', 'age', 'housing', 'existing_credits', 'job', 'num_dependents', 'own_telephone']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #13 (Test Index: 151)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - checking_status <= 1.00
+  - age <= 33.00
+  - installment_commitment > 2.00
+  - 3.00 < purpose <= 4.00
+  - employment > 1.00
+  - savings_status <= 2.00
+  - property_magnitude > 1.00
+  - credit_history > 1.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'savings_status', 'employment', 'installment_commitment', 'property_magnitude', 'age']
+  Support: 0
+  Model predicts negative: 0.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #14 (Test Index: 159)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.00
+  - housing > 1.00
+  - purpose <= 3.00
+  - savings_status <= 2.00
+  - personal_status <= 0.00
+  - age <= 27.00
+  - installment_commitment > 3.00
+  - residence_since > 2.00
+  - credit_history > 1.00
+  - own_telephone <= 0.00
+  - job <= 1.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'savings_status', 'installment_commitment', 'personal_status', 'residence_since', 'age', 'housing', 'job', 'own_telephone']
+  Support: 3
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #15 (Test Index: 160)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 24.00
+  - checking_status <= 1.00
+  - personal_status <= 0.00
+  - savings_status <= 2.00
+  - age <= 33.00
+  - credit_amount > 3870.50
+  - installment_commitment > 2.00
+  - purpose <= 6.00
+  - credit_history > 1.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'installment_commitment', 'personal_status', 'age']
+  Support: 4
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #16 (Test Index: 163)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - 0.00 < checking_status <= 1.00
+  - 3.00 < purpose <= 4.00
+  - duration > 12.00
+  - employment > 1.00
+  - savings_status <= 2.00
+  - existing_credits <= 1.00
+  - credit_amount <= 2246.50
+  - own_telephone <= 0.00
+  - credit_history > 1.00
+  - residence_since <= 3.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'existing_credits', 'own_telephone']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #17 (Test Index: 186)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - duration > 18.00
+  - checking_status <= 1.00
+  - age <= 27.00
+  - 3.00 < purpose <= 4.00
+  - credit_amount <= 1329.00
+  - residence_since <= 2.00
+  - own_telephone <= 0.00
+  - existing_credits <= 1.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'residence_since', 'age', 'existing_credits', 'own_telephone']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+================================================================================
+SUMMARY FOR RANDOM_FOREST
+================================================================================
+Total false negatives: 17
+With violations: 0
+
+
+================================================================================
+ DECISION_TREE 
+================================================================================
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #1 (Test Index: 0)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status > 2.50
+  - credit_amount > 1681.00
+  - employment > 1.50
+  - duration > 15.00
+  - purpose <= 3.50
+  - own_telephone <= 0.50
+  - existing_credits <= 2.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'existing_credits', 'own_telephone']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #2 (Test Index: 1)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  - employment <= 3.50
+  - employment > 1.50
+  - property_magnitude <= 2.50
+  - installment_commitment > 2.50
+  Features: ['checking_status', 'duration', 'employment', 'installment_commitment', 'property_magnitude']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #3 (Test Index: 5)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose > 5.00
+  - checking_status <= 2.50
+  - employment <= 2.50
+  - age > 25.00
+  - credit_history <= 2.00
+  - property_magnitude > 1.50
+  Features: ['checking_status', 'credit_history', 'purpose', 'employment', 'property_magnitude', 'age', 'other_payment_plans']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #4 (Test Index: 9)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans <= 0.50
+  - age <= 44.50
+  - purpose > 4.50
+  - job > 2.00
+  Features: ['checking_status', 'purpose', 'age', 'other_payment_plans', 'job']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #5 (Test Index: 10)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose > 5.00
+  - checking_status <= 2.50
+  - employment <= 2.50
+  - age > 25.00
+  - credit_history > 2.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'employment', 'age', 'other_payment_plans']
+  Support: 4
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #6 (Test Index: 14)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose <= 5.00
+  - credit_amount <= 6687.50
+  - savings_status <= 2.50
+  - purpose > 2.50
+  - personal_status <= 2.50
+  - duration <= 25.50
+  - credit_amount > 4291.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'personal_status', 'other_payment_plans']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #7 (Test Index: 16)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration > 22.50
+  - residence_since > 1.50
+  - age <= 36.50
+  - employment > 1.50
+  - age > 21.00
+  - housing > 0.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'age', 'housing']
+  Support: 12
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #8 (Test Index: 20)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose > 5.00
+  - checking_status <= 2.50
+  - employment <= 2.50
+  - age > 25.00
+  - credit_history > 2.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'employment', 'age', 'other_payment_plans']
+  Support: 4
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #9 (Test Index: 25)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans <= 0.50
+  - age <= 44.50
+  - purpose <= 4.50
+  - personal_status > 0.50
+  - credit_history <= 3.50
+  - duration > 16.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'personal_status', 'age', 'other_payment_plans']
+  Support: 9
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #10 (Test Index: 35)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration <= 11.50
+  - property_magnitude <= 2.50
+  - existing_credits <= 1.50
+  - age <= 29.50
+  - residence_since > 1.50
+  - num_dependents <= 1.50
+  Features: ['checking_status', 'duration', 'residence_since', 'property_magnitude', 'age', 'existing_credits', 'num_dependents']
+  Support: 7
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #11 (Test Index: 44)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits <= 1.50
+  - duration > 14.50
+  - employment > 3.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'existing_credits']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #12 (Test Index: 46)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status > 2.50
+  - credit_amount > 1681.00
+  - employment > 1.50
+  - duration > 15.00
+  - purpose <= 3.50
+  - own_telephone <= 0.50
+  - existing_credits <= 2.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'existing_credits', 'own_telephone']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #13 (Test Index: 56)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose <= 5.00
+  - credit_amount <= 6687.50
+  - savings_status <= 2.50
+  - purpose <= 2.50
+  - credit_amount > 1708.00
+  - credit_amount > 2347.00
+  - duration <= 21.00
+  - housing <= 1.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'other_payment_plans', 'housing']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #14 (Test Index: 59)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans <= 0.50
+  - age <= 44.50
+  - purpose > 4.50
+  - job <= 2.00
+  - credit_amount > 2365.00
+  - credit_history > 2.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'credit_amount', 'age', 'other_payment_plans', 'job']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #15 (Test Index: 73)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount <= 1381.50
+  - other_parties > 1.50
+  - own_telephone <= 0.50
+  - purpose > 0.50
+  - credit_history > 1.50
+  - foreign_worker > 0.50
+  - age > 37.50
+  - purpose <= 6.50
+  - savings_status <= 3.00
+  - age > 40.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'other_parties', 'age', 'own_telephone', 'foreign_worker']
+  Support: 7
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #16 (Test Index: 75)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits <= 1.50
+  - duration > 14.50
+  - employment <= 3.50
+  - savings_status > 1.50
+  - employment > 0.50
+  - credit_history <= 2.50
+  - job <= 0.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'employment', 'existing_credits', 'job']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #17 (Test Index: 77)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration > 22.50
+  - residence_since > 1.50
+  - age <= 36.50
+  - employment > 1.50
+  - age > 21.00
+  - housing <= 0.50
+  - savings_status > 0.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'age', 'housing']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #18 (Test Index: 80)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits > 1.50
+  - housing <= 1.50
+  - property_magnitude > 1.50
+  - age <= 40.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'property_magnitude', 'age', 'housing', 'existing_credits']
+  Support: 4
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #19 (Test Index: 82)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose <= 5.00
+  - credit_amount <= 6687.50
+  - savings_status <= 2.50
+  - purpose > 2.50
+  - personal_status <= 2.50
+  - duration <= 25.50
+  - credit_amount <= 4291.50
+  - existing_credits <= 2.50
+  - job > 2.50
+  - installment_commitment > 3.50
+  - credit_history > 2.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'installment_commitment', 'personal_status', 'other_payment_plans', 'existing_credits', 'job']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #20 (Test Index: 91)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose <= 5.00
+  - credit_amount <= 6687.50
+  - savings_status <= 2.50
+  - purpose > 2.50
+  - personal_status <= 2.50
+  - duration <= 25.50
+  - credit_amount <= 4291.50
+  - existing_credits <= 2.50
+  - job > 2.50
+  - installment_commitment > 3.50
+  - credit_history > 2.00
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'installment_commitment', 'personal_status', 'other_payment_plans', 'existing_credits', 'job']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #21 (Test Index: 95)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount <= 1381.50
+  - other_parties > 1.50
+  - own_telephone <= 0.50
+  - purpose > 0.50
+  - credit_history <= 1.50
+  - purpose > 3.50
+  - property_magnitude <= 2.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'other_parties', 'property_magnitude', 'own_telephone']
+  Support: 5
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #22 (Test Index: 113)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits <= 1.50
+  - duration > 14.50
+  - employment > 3.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'existing_credits']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #23 (Test Index: 115)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status > 2.50
+  - credit_amount > 1681.00
+  - employment > 1.50
+  - duration <= 15.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #24 (Test Index: 125)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration > 22.50
+  - residence_since > 1.50
+  - age <= 36.50
+  - employment > 1.50
+  - age > 21.00
+  - housing > 0.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'age', 'housing']
+  Support: 12
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #25 (Test Index: 126)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans <= 0.50
+  - age <= 44.50
+  - purpose > 4.50
+  - job <= 2.00
+  - credit_amount > 2365.00
+  - credit_history > 2.00
+  Features: ['checking_status', 'credit_history', 'purpose', 'credit_amount', 'age', 'other_payment_plans', 'job']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #26 (Test Index: 133)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose > 5.00
+  - checking_status > 2.50
+  - age <= 23.50
+  - installment_commitment > 2.50
+  - employment > 1.50
+  Features: ['checking_status', 'purpose', 'employment', 'installment_commitment', 'age', 'other_payment_plans']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #27 (Test Index: 135)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount <= 1381.50
+  - other_parties > 1.50
+  - own_telephone <= 0.50
+  - purpose > 0.50
+  - credit_history > 1.50
+  - foreign_worker > 0.50
+  - age <= 37.50
+  - job <= 2.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'other_parties', 'age', 'job', 'own_telephone', 'foreign_worker']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #28 (Test Index: 140)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits > 1.50
+  - housing > 1.50
+  - job <= 2.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'housing', 'existing_credits', 'job']
+  Support: 7
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #29 (Test Index: 142)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose > 5.00
+  - checking_status > 2.50
+  - age <= 23.50
+  - installment_commitment > 2.50
+  - employment > 1.50
+  Features: ['checking_status', 'purpose', 'employment', 'installment_commitment', 'age', 'other_payment_plans']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #30 (Test Index: 146)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits > 1.50
+  - housing > 1.50
+  - job <= 2.50
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'housing', 'existing_credits', 'job']
+  Support: 7
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #31 (Test Index: 151)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  - employment <= 3.50
+  - employment > 1.50
+  - property_magnitude <= 2.50
+  - installment_commitment > 2.50
+  Features: ['checking_status', 'duration', 'employment', 'installment_commitment', 'property_magnitude']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #32 (Test Index: 159)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount <= 1381.50
+  - other_parties > 1.50
+  - own_telephone <= 0.50
+  - purpose > 0.50
+  - credit_history > 1.50
+  - foreign_worker > 0.50
+  - age <= 37.50
+  - job <= 2.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'other_parties', 'age', 'job', 'own_telephone', 'foreign_worker']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #33 (Test Index: 160)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+  - employment <= 3.50
+  - employment > 1.50
+  - property_magnitude <= 2.50
+  - installment_commitment > 2.50
+  Features: ['checking_status', 'duration', 'employment', 'installment_commitment', 'property_magnitude']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #34 (Test Index: 177)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration > 22.50
+  - residence_since > 1.50
+  - age <= 36.50
+  - employment <= 1.50
+  - checking_status <= 0.50
+  - credit_amount > 1695.00
+  Features: ['checking_status', 'duration', 'purpose', 'credit_amount', 'savings_status', 'employment', 'residence_since', 'age']
+  Support: 7
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #35 (Test Index: 186)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount <= 1381.50
+  - other_parties > 1.50
+  - own_telephone <= 0.50
+  - purpose > 0.50
+  - credit_history > 1.50
+  - foreign_worker > 0.50
+  - age <= 37.50
+  - job <= 2.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'other_parties', 'age', 'job', 'own_telephone', 'foreign_worker']
+  Support: 22
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #36 (Test Index: 192)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status > 1.50
+  - other_payment_plans > 0.50
+  - purpose <= 5.00
+  - credit_amount <= 6687.50
+  - savings_status > 2.50
+  - other_parties <= 1.50
+  - property_magnitude <= 1.50
+  Features: ['checking_status', 'purpose', 'credit_amount', 'savings_status', 'other_parties', 'property_magnitude', 'other_payment_plans']
+  Support: 1
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+--------------------------------------------------------------------------------
+FALSE NEGATIVE #37 (Test Index: 196)
+--------------------------------------------------------------------------------
+
+MODEL ANCHOR:
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration <= 31.50
+  - credit_amount > 1381.50
+  - purpose <= 7.50
+  - savings_status <= 2.50
+  - credit_amount <= 7619.50
+  - duration <= 22.50
+  - existing_credits > 1.50
+  - housing <= 1.50
+  - property_magnitude <= 1.50
+  - age <= 53.50
+  - credit_history > 1.50
+  - age <= 29.00
+  - duration > 16.50
+  Features: ['checking_status', 'duration', 'credit_history', 'purpose', 'credit_amount', 'savings_status', 'property_magnitude', 'age', 'housing', 'existing_credits']
+  Support: 2
+  Model predicts negative: 100.0%
+  True positive rate: 0.0%
+  Error budget (threshold): 0.00
+
+GT ANCHORS (constrained to model features):
+  (no valid GT anchors found with overlap)
+
+================================================================================
+SUMMARY FOR DECISION_TREE
+================================================================================
+Total false negatives: 37
+With violations: 0
+
+
+================================================================================
+ OVERALL SUMMARY
+================================================================================
+
+shallow_tree: 0/10 false negatives have violations
+random_forest: 0/17 false negatives have violations
+decision_tree: 0/37 false negatives have violations
+
+================================================================================
+ BEST EXAMPLES FOR PAPER
+================================================================================

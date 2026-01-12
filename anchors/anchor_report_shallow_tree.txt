@@ -1,0 +1,380 @@
+
+Analyzing 10 false negatives...
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #1 (Test Index: 1)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 1.00
+      - credit_amount > 3870.50
+      - personal_status <= 0.00
+      - savings_status > 2.00
+      - age <= 33.00
+      - housing <= 1.00
+      - num_dependents <= 1.00
+      - 0.00 < employment <= 3.00
+      - existing_credits <= 1.00
+      - purpose <= 6.00
+      - residence_since <= 3.00
+      - own_telephone <= 0.00
+      - credit_history <= 3.00
+      - property_magnitude <= 3.00
+      - other_parties <= 2.00
+    Precision: 0.9363
+    Coverage: 0.0014
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 3972.00 <= credit_amount <= 4042.00
+      - age <= 44.00
+    Precision: 1.0000 (8/8 positive)
+    Coverage: 0.0080
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 6
+    Samples in negative anchor (model): 2
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #2 (Test Index: 2)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 3870.50
+      - employment <= 0.00
+      - installment_commitment <= 2.00
+      - 0.00 < personal_status <= 3.00
+      - property_magnitude <= 0.00
+      - residence_since <= 2.00
+      - job <= 1.00
+      - purpose <= 3.00
+      - housing <= 1.00
+      - existing_credits <= 2.00
+      - num_dependents <= 1.00
+      - age > 33.00
+      - other_payment_plans <= 1.00
+      - foreign_worker <= 1.00
+      - own_telephone <= 1.00
+      - other_parties <= 2.00
+    Precision: 0.8973
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - savings_status >= 3.00
+      - 41.00 <= age <= 50.00
+    Precision: 0.9524 (40/42 positive)
+    Coverage: 0.0420
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 32
+    Samples in negative anchor (model): 0
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #3 (Test Index: 48)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 3870.50
+      - 0.00 < own_telephone <= 1.00
+      - existing_credits <= 1.00
+      - employment > 0.00
+      - residence_since <= 3.00
+      - purpose <= 3.00
+      - installment_commitment <= 2.00
+      - 0.00 < property_magnitude <= 3.00
+      - age <= 33.00
+      - 0.00 < personal_status <= 3.00
+      - foreign_worker <= 1.00
+      - other_parties <= 2.00
+    Precision: 0.9120
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 2.00 <= credit_history <= 2.00
+      - 31.00 <= age <= 39.00
+    Precision: 0.9600 (24/25 positive)
+    Coverage: 0.0250
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 18
+    Samples in negative anchor (model): 3
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #4 (Test Index: 71)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 3870.50
+      - purpose <= 3.00
+      - 1.00 < credit_history <= 3.00
+      - employment <= 0.00
+      - age > 33.00
+      - 3.00 < installment_commitment <= 4.00
+      - foreign_worker <= 1.00
+      - other_payment_plans <= 1.00
+      - own_telephone <= 1.00
+      - 1.00 < property_magnitude <= 3.00
+      - residence_since <= 4.00
+      - 0.00 < personal_status <= 3.00
+      - other_parties <= 2.00
+      - existing_credits <= 1.00
+      - job <= 1.00
+      - housing <= 1.00
+    Precision: 0.8503
+    Coverage: 0.0012
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 2.00 <= credit_history <= 2.00
+      - 31.00 <= age <= 39.00
+    Precision: 0.9600 (24/25 positive)
+    Coverage: 0.0250
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 18
+    Samples in negative anchor (model): 1
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #5 (Test Index: 86)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 1.00
+      - credit_amount > 3870.50
+      - 4.00 < purpose <= 6.00
+      - own_telephone <= 0.00
+      - employment > 1.00
+      - existing_credits <= 1.00
+      - num_dependents <= 1.00
+      - age > 41.00
+      - 2.00 < residence_since <= 4.00
+      - 1.00 < credit_history <= 3.00
+      - installment_commitment <= 4.00
+      - property_magnitude <= 1.00
+      - job <= 1.00
+      - personal_status > 0.00
+      - housing <= 1.00
+    Precision: 0.9718
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - purpose >= 5.00
+      - 43.00 <= age <= 43.00
+    Precision: 1.0000 (5/5 positive)
+    Coverage: 0.0050
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 4
+    Samples in negative anchor (model): 0
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #6 (Test Index: 129)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 2246.50
+      - employment <= 1.00
+      - job <= 1.00
+      - residence_since <= 2.00
+      - own_telephone <= 0.00
+      - housing <= 1.00
+      - purpose <= 4.00
+      - existing_credits <= 1.00
+      - age <= 27.00
+      - 0.00 < personal_status <= 3.00
+      - other_payment_plans <= 1.00
+      - installment_commitment <= 4.00
+      - other_parties <= 2.00
+      - foreign_worker <= 1.00
+      - savings_status > 2.00
+      - property_magnitude <= 3.00
+      - credit_history <= 3.00
+    Precision: 0.8437
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - duration <= 47.00
+      - 3556.00 <= credit_amount <= 3914.00
+    Precision: 0.9545 (42/44 positive)
+    Coverage: 0.0440
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 34
+    Samples in negative anchor (model): 1
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #7 (Test Index: 137)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 3870.50
+      - existing_credits <= 1.00
+      - personal_status > 0.00
+      - purpose > 4.00
+      - employment > 1.00
+      - age > 27.00
+      - property_magnitude > 0.00
+      - other_payment_plans <= 1.00
+      - own_telephone <= 1.00
+      - foreign_worker <= 1.00
+      - housing <= 1.00
+      - credit_history > 1.00
+    Precision: 0.9502
+    Coverage: 0.0012
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - duration <= 60.00
+      - 5248.00 <= credit_amount <= 5866.00
+    Precision: 0.9500 (19/20 positive)
+    Coverage: 0.0200
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 13
+    Samples in negative anchor (model): 6
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #8 (Test Index: 151)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - property_magnitude > 1.00
+      - credit_amount > 2246.50
+      - own_telephone <= 0.00
+      - residence_since > 2.00
+      - job <= 1.00
+    Precision: 0.9565
+    Coverage: 0.0065
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 2675.00 <= credit_amount <= 3059.00
+      - property_magnitude >= 2.00
+    Precision: 0.9630 (26/27 positive)
+    Coverage: 0.0270
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 21
+    Samples in negative anchor (model): 13
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #9 (Test Index: 160)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 1.00
+      - credit_amount > 3870.50
+      - personal_status <= 0.00
+      - 1.00 < property_magnitude <= 3.00
+      - 3.00 < purpose <= 6.00
+      - 1.00 < credit_history <= 3.00
+      - age <= 33.00
+      - other_payment_plans <= 1.00
+      - job <= 1.00
+      - own_telephone <= 1.00
+      - 1.00 < employment <= 3.00
+      - housing <= 1.00
+      - residence_since <= 2.00
+      - other_parties <= 2.00
+      - 2.00 < installment_commitment <= 4.00
+      - foreign_worker <= 1.00
+      - existing_credits <= 2.00
+      - num_dependents <= 1.00
+    Precision: 0.9109
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 4771.00 <= credit_amount <= 4811.00
+    Precision: 1.0000 (5/5 positive)
+    Coverage: 0.0050
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 3
+    Samples in negative anchor (model): 1
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+──────────────────────────────────────────────────────────────────────
+FALSE NEGATIVE #10 (Test Index: 167)
+──────────────────────────────────────────────────────────────────────
+
+[1] MODEL'S NEGATIVE ANCHOR:
+    Rules:
+      - duration > 24.00
+      - checking_status <= 0.00
+      - credit_amount > 3870.50
+      - residence_since <= 2.00
+      - 3.00 < purpose <= 6.00
+      - installment_commitment <= 2.00
+      - property_magnitude > 0.00
+      - job <= 1.00
+      - credit_history > 1.00
+      - age > 27.00
+      - existing_credits <= 1.00
+      - num_dependents <= 1.00
+      - other_parties <= 2.00
+      - own_telephone <= 0.00
+      - other_payment_plans <= 1.00
+      - savings_status <= 2.00
+    Precision: 0.9363
+    Coverage: 0.0000
+
+[2] GROUND TRUTH POSITIVE ANCHOR:
+    Rules:
+      - 7166.00 <= credit_amount <= 7485.00
+      - installment_commitment <= 3.00
+    Precision: 1.0000 (10/10 positive)
+    Coverage: 0.0100
+
+[3] OVERLAP ANALYSIS:
+    Samples in positive anchor (GT): 5
+    Samples in negative anchor (model): 1
+    Samples in overlap: 0
+    Overlap as % of GT anchor: 0.0%
+
+Results saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/anchors/anchor_results_shallow_tree.json

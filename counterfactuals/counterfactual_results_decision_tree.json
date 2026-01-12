@@ -1,0 +1,594 @@
+[
+  {
+    "test_idx": 73,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.013722032348753046,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        1344.0,
+        1382.0
+      ]
+    ],
+    "violation_score": 0.00013722032348753045,
+    "true_label": 1
+  },
+  {
+    "test_idx": 146,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.01877751795092522,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        1433.0,
+        1381.0
+      ]
+    ],
+    "violation_score": 0.0001877751795092522,
+    "true_label": 1
+  },
+  {
+    "test_idx": 44,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        15.0,
+        14.0
+      ]
+    ],
+    "violation_score": 0.0008232746665408647,
+    "true_label": 1
+  },
+  {
+    "test_idx": 115,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        12.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.0008232746665408647,
+    "true_label": 1
+  },
+  {
+    "test_idx": 135,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        12.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.0008232746665408647,
+    "true_label": 1
+  },
+  {
+    "test_idx": 140,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        12.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.0008232746665408647,
+    "true_label": 1
+  },
+  {
+    "test_idx": 142,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08794559082668116,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        23.0,
+        24.0
+      ]
+    ],
+    "violation_score": 0.0008794559082668116,
+    "true_label": 1
+  },
+  {
+    "test_idx": 196,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.08794559082668116,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        29.0,
+        30.0
+      ]
+    ],
+    "violation_score": 0.0008794559082668116,
+    "true_label": 1
+  },
+  {
+    "test_idx": 16,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.16465493330817293,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        24.0,
+        22.0
+      ]
+    ],
+    "violation_score": 0.0016465493330817295,
+    "true_label": 1
+  },
+  {
+    "test_idx": 177,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.16465493330817293,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        24.0,
+        22.0
+      ]
+    ],
+    "violation_score": 0.0016465493330817295,
+    "true_label": 1
+  },
+  {
+    "test_idx": 125,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.17589118165336232,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        23.0,
+        21.0
+      ]
+    ],
+    "violation_score": 0.0017589118165336232,
+    "true_label": 1
+  },
+  {
+    "test_idx": 75,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.20185831797244613,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        1940.0,
+        1381.0
+      ]
+    ],
+    "violation_score": 0.0020185831797244615,
+    "true_label": 1
+  },
+  {
+    "test_idx": 46,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.23580229272988787,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        2333.0,
+        1680.0
+      ]
+    ],
+    "violation_score": 0.0023580229272988787,
+    "true_label": 1
+  },
+  {
+    "test_idx": 159,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.26360746354183484,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        652.0,
+        1382.0
+      ]
+    ],
+    "violation_score": 0.0026360746354183485,
+    "true_label": 1
+  },
+  {
+    "test_idx": 77,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.2638367724800435,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        24.0,
+        21.0
+      ]
+    ],
+    "violation_score": 0.002638367724800435,
+    "true_label": 1
+  },
+  {
+    "test_idx": 133,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.2638367724800435,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        21.0,
+        24.0
+      ]
+    ],
+    "violation_score": 0.002638367724800435,
+    "true_label": 1
+  },
+  {
+    "test_idx": 0,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.2697462674873296,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        2427.0,
+        1680.0
+      ]
+    ],
+    "violation_score": 0.002697462674873296,
+    "true_label": 1
+  },
+  {
+    "test_idx": 113,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.32930986661634587,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        18.0,
+        14.0
+      ]
+    ],
+    "violation_score": 0.003293098666163459,
+    "true_label": 1
+  },
+  {
+    "test_idx": 14,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.376633677361827,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        5324.0,
+        4281.0
+      ]
+    ],
+    "violation_score": 0.00376633677361827,
+    "true_label": 1
+  },
+  {
+    "test_idx": 95,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.376633677361827,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        339.0,
+        1382.0
+      ]
+    ],
+    "violation_score": 0.00376633677361827,
+    "true_label": 1
+  },
+  {
+    "test_idx": 5,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.4138038300123833,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "purpose",
+        6.0,
+        5.0
+      ]
+    ],
+    "violation_score": 0.004138038300123833,
+    "true_label": 1
+  },
+  {
+    "test_idx": 20,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.4138038300123833,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "purpose",
+        6.0,
+        5.0
+      ]
+    ],
+    "violation_score": 0.004138038300123833,
+    "true_label": 1
+  },
+  {
+    "test_idx": 80,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.4397279541334058,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        36.0,
+        41.0
+      ]
+    ],
+    "violation_score": 0.004397279541334058,
+    "true_label": 1
+  },
+  {
+    "test_idx": 56,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.4557159164243775,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        3448.0,
+        2186.0
+      ]
+    ],
+    "violation_score": 0.004557159164243775,
+    "true_label": 1
+  },
+  {
+    "test_idx": 151,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.49396479992451875,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        36.0,
+        30.0
+      ]
+    ],
+    "violation_score": 0.004939647999245188,
+    "true_label": 1
+  },
+  {
+    "test_idx": 35,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.6156191357867682,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        23.0,
+        30.0
+      ]
+    ],
+    "violation_score": 0.006156191357867682,
+    "true_label": 1
+  },
+  {
+    "test_idx": 82,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.7392326321991382,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "personal_status",
+        2.0,
+        3.0
+      ]
+    ],
+    "violation_score": 0.007392326321991382,
+    "true_label": 1
+  },
+  {
+    "test_idx": 1,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.7549995877142995,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "employment",
+        2.0,
+        1.0
+      ]
+    ],
+    "violation_score": 0.007549995877142996,
+    "true_label": 1
+  },
+  {
+    "test_idx": 10,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.804361815109735,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "checking_status",
+        2.0,
+        3.0
+      ]
+    ],
+    "violation_score": 0.00804361815109735,
+    "true_label": 1
+  },
+  {
+    "test_idx": 160,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.822135558731056,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "property_magnitude",
+        2.0,
+        3.0
+      ]
+    ],
+    "violation_score": 0.008221355587310561,
+    "true_label": 1
+  },
+  {
+    "test_idx": 192,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.822135558731056,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "property_magnitude",
+        1.0,
+        2.0
+      ]
+    ],
+    "violation_score": 0.008221355587310561,
+    "true_label": 1
+  },
+  {
+    "test_idx": 9,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.8276076600247666,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "purpose",
+        6.0,
+        4.0
+      ]
+    ],
+    "violation_score": 0.008276076600247666,
+    "true_label": 1
+  },
+  {
+    "test_idx": 91,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.8276076600247666,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "purpose",
+        4.0,
+        2.0
+      ]
+    ],
+    "violation_score": 0.008276076600247666,
+    "true_label": 1
+  },
+  {
+    "test_idx": 59,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.9464235260724636,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_history",
+        3.0,
+        2.0
+      ]
+    ],
+    "violation_score": 0.009464235260724636,
+    "true_label": 1
+  },
+  {
+    "test_idx": 126,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 0.9464235260724636,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_history",
+        3.0,
+        2.0
+      ]
+    ],
+    "violation_score": 0.009464235260724636,
+    "true_label": 1
+  },
+  {
+    "test_idx": 186,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 1.070257066503124,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        24.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.01070257066503124,
+    "true_label": 1
+  },
+  {
+    "test_idx": 25,
+    "prob_positive": 0.0,
+    "cf_prob_positive": 1.0,
+    "cf_distance": 1.2312382715735364,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        31.0,
+        45.0
+      ]
+    ],
+    "violation_score": 0.012312382715735364,
+    "true_label": 1
+  }
+]

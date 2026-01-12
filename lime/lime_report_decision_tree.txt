@@ -1,0 +1,92 @@
+
+Analyzing 37 false negatives...
+  Processing 10/37...
+  Processing 20/37...
+  Processing 30/37...
+
+======================================================================
+MONOTONICITY ANALYSIS
+======================================================================
+
+Feature summary (sorted by importance):
+----------------------------------------------------------------------
+Feature                         Mean        Std        Min        Max
+----------------------------------------------------------------------
+age                           0.0153     0.0384    -0.0550     0.1049
+personal_status               0.0107     0.0384    -0.0766     0.0764
+installment_commitment       -0.0015     0.0382    -0.0726     0.0814
+housing                      -0.0097     0.0389    -0.0882     0.0776
+own_telephone                 0.0109     0.0333    -0.0571     0.0770
+checking_status               0.0167     0.0333    -0.0390     0.0959
+employment                   -0.0062     0.0341    -0.0873     0.0660
+credit_amount                 0.0039     0.0356    -0.0921     0.0623
+property_magnitude           -0.0019     0.0321    -0.0850     0.0705
+savings_status                0.0089     0.0285    -0.0667     0.0629
+residence_since               0.0016     0.0305    -0.0541     0.0911
+duration                     -0.0129     0.0285    -0.0862     0.0522
+existing_credits              0.0064     0.0272    -0.0552     0.0468
+credit_history               -0.0041     0.0286    -0.0634     0.0668
+other_payment_plans           0.0100     0.0327    -0.0541     0.1064
+job                          -0.0100     0.0287    -0.0815     0.0312
+purpose                       0.0021     0.0291    -0.0467     0.0900
+num_dependents                0.0082     0.0214    -0.0701     0.0392
+other_parties                -0.0098     0.0148    -0.0608     0.0216
+foreign_worker               -0.0075     0.0135    -0.0439     0.0295
+
+======================================================================
+SIGN INCONSISTENCIES
+(Features with both positive and negative weights across instances)
+======================================================================
+
+Feature                      + Count    - Count  Incon.Ratio
+------------------------------------------------------------
+installment_commitment            16         15       40.54%
+residence_since                   14         15       37.84%
+purpose                           13         13       35.14%
+property_magnitude                13         14       35.14%
+housing                           12         16       32.43%
+credit_history                    11         16       29.73%
+credit_amount                     13         11       29.73%
+own_telephone                     21         11       29.73%
+employment                        10         19       27.03%
+personal_status                   18         10       27.03%
+
+======================================================================
+HIGH VARIANCE FEATURES
+(Features with unstable attributions - high std relative to mean)
+======================================================================
+
+Feature                         Mean        Std         CV
+------------------------------------------------------------
+installment_commitment       -0.0015     0.0382      15.08
+residence_since               0.0016     0.0305      11.82
+property_magnitude           -0.0019     0.0321      10.97
+purpose                       0.0021     0.0291       9.53
+credit_amount                 0.0039     0.0356       7.33
+credit_history               -0.0041     0.0286       5.64
+employment                   -0.0062     0.0341       4.75
+existing_credits              0.0064     0.0272       3.65
+housing                      -0.0097     0.0389       3.62
+personal_status               0.0107     0.0384       3.28
+
+======================================================================
+CREDIT AMOUNT ANALYSIS
+(Higher credit amounts might decrease approval - domain expectation)
+======================================================================
+
+Instances with POSITIVE credit_amount weight: 13
+  (credit_amount increases P(Good Credit))
+Instances with NEGATIVE credit_amount weight: 11
+  (credit_amount decreases P(Good Credit))
+
+Top instances where credit_amount has positive effect:
+  Instance 135: credit=1007, weight=0.0623
+  Instance 73: credit=1344, weight=0.0614
+  Instance 146: credit=1433, weight=0.0552
+  Instance 186: credit=1201, weight=0.0500
+  Instance 5: credit=409, weight=0.0464
+
+LIME weights saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/lime/lime_weights_decision_tree.csv
+Instance data saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/lime/instances_decision_tree.csv
+Feature summary saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/lime/lime_summary_decision_tree.csv
+Violations saved to: /Users/gcskoenig/university/postdoc/research/PA25-contestability/claudecode/lime/monotonicity_violations_decision_tree.json

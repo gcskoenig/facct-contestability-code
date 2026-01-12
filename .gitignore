@@ -1,0 +1,7 @@
+*backup*/
+*venv*/
+data/
+.claude/
+.DS_Store
+SESSION_SUMMARY.txt
+reproducibility_test/

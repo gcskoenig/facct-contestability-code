@@ -1,0 +1,274 @@
+[
+  {
+    "test_idx": 163,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.01047207731878522,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        1721.0,
+        1750.0
+      ]
+    ],
+    "violation_score": 0.005340759432580462,
+    "true_label": 1
+  },
+  {
+    "test_idx": 1,
+    "prob_positive": 0.48,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.014805350692075656,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        3990.0,
+        3949.0
+      ]
+    ],
+    "violation_score": 0.007254621839117071,
+    "true_label": 1
+  },
+  {
+    "test_idx": 84,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.01769419960760261,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        2171.0,
+        2122.0
+      ]
+    ],
+    "violation_score": 0.009024041799877333,
+    "true_label": 1
+  },
+  {
+    "test_idx": 78,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.06030472111162523,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        2121.0,
+        2288.0
+      ]
+    ],
+    "violation_score": 0.030755407766928866,
+    "true_label": 1
+  },
+  {
+    "test_idx": 46,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.07041569231596959,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        2333.0,
+        2528.0
+      ]
+    ],
+    "violation_score": 0.03591200308114449,
+    "true_label": 1
+  },
+  {
+    "test_idx": 140,
+    "prob_positive": 0.46,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        12.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.038693909327420645,
+    "true_label": 1
+  },
+  {
+    "test_idx": 135,
+    "prob_positive": 0.48,
+    "cf_prob_positive": 0.56,
+    "cf_distance": 0.08232746665408647,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        12.0,
+        11.0
+      ]
+    ],
+    "violation_score": 0.04034045866050237,
+    "true_label": 1
+  },
+  {
+    "test_idx": 151,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.08794559082668116,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        30.0,
+        29.0
+      ]
+    ],
+    "violation_score": 0.04485225132160739,
+    "true_label": 1
+  },
+  {
+    "test_idx": 77,
+    "prob_positive": 0.48,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.17589118165336232,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "age",
+        24.0,
+        22.0
+      ]
+    ],
+    "violation_score": 0.08618667901014754,
+    "true_label": 1
+  },
+  {
+    "test_idx": 2,
+    "prob_positive": 0.48,
+    "cf_prob_positive": 0.54,
+    "cf_distance": 0.24698239996225937,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        48.0,
+        45.0
+      ]
+    ],
+    "violation_score": 0.1210213759815071,
+    "true_label": 1
+  },
+  {
+    "test_idx": 121,
+    "prob_positive": 0.5,
+    "cf_prob_positive": 0.58,
+    "cf_distance": 0.24698239996225937,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        33.0,
+        30.0
+      ]
+    ],
+    "violation_score": 0.1259610239807523,
+    "true_label": 1
+  },
+  {
+    "test_idx": 160,
+    "prob_positive": 0.38,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.43332733732904355,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        4795.0,
+        3595.0
+      ]
+    ],
+    "violation_score": 0.168997661558327,
+    "true_label": 1
+  },
+  {
+    "test_idx": 108,
+    "prob_positive": 0.38,
+    "cf_prob_positive": 0.54,
+    "cf_distance": 0.49396479992451875,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "duration",
+        36.0,
+        30.0
+      ]
+    ],
+    "violation_score": 0.1926462719705623,
+    "true_label": 1
+  },
+  {
+    "test_idx": 159,
+    "prob_positive": 0.28,
+    "cf_prob_positive": 0.7,
+    "cf_distance": 0.804361815109735,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "checking_status",
+        1.0,
+        2.0
+      ]
+    ],
+    "violation_score": 0.2332649263818232,
+    "true_label": 1
+  },
+  {
+    "test_idx": 186,
+    "prob_positive": 0.38,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 0.8247663653829462,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "credit_amount",
+        1201.0,
+        3485.0
+      ]
+    ],
+    "violation_score": 0.32165888249934904,
+    "true_label": 1
+  },
+  {
+    "test_idx": 86,
+    "prob_positive": 0.32,
+    "cf_prob_positive": 0.52,
+    "cf_distance": 1.2414114900371498,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "purpose",
+        5.0,
+        8.0
+      ]
+    ],
+    "violation_score": 0.4096657917122595,
+    "true_label": 1
+  },
+  {
+    "test_idx": 25,
+    "prob_positive": 0.32,
+    "cf_prob_positive": 0.58,
+    "cf_distance": 2.3901264651237404,
+    "n_changed": 1,
+    "changed_features": [
+      [
+        "other_payment_plans",
+        0.0,
+        1.0
+      ]
+    ],
+    "violation_score": 0.7887417334908343,
+    "true_label": 1
+  }
+]

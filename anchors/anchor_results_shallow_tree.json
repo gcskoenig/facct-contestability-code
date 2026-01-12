@@ -1,0 +1,628 @@
+[
+  {
+    "test_idx": 1,
+    "instance": [
+      0.0,
+      36.0,
+      0.0,
+      1.0,
+      3990.0,
+      4.0,
+      2.0,
+      3.0,
+      0.0,
+      2.0,
+      2.0,
+      2.0,
+      29.0,
+      0.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 1.00",
+        "credit_amount > 3870.50",
+        "personal_status <= 0.00",
+        "savings_status > 2.00",
+        "age <= 33.00",
+        "housing <= 1.00",
+        "num_dependents <= 1.00",
+        "0.00 < employment <= 3.00",
+        "existing_credits <= 1.00",
+        "purpose <= 6.00",
+        "residence_since <= 3.00",
+        "own_telephone <= 0.00",
+        "credit_history <= 3.00",
+        "property_magnitude <= 3.00",
+        "other_parties <= 2.00"
+      ],
+      "precision": 0.9363395225464191,
+      "coverage": 0.0014
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "3972.00 <= credit_amount <= 4042.00",
+        "age <= 44.00"
+      ],
+      "precision": 1.0,
+      "coverage": 0.008,
+      "n_samples": 8
+    },
+    "overlap": {
+      "n_in_positive": 6,
+      "n_in_negative": 2,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 2,
+    "instance": [
+      0.0,
+      48.0,
+      4.0,
+      0.0,
+      12204.0,
+      4.0,
+      0.0,
+      2.0,
+      3.0,
+      2.0,
+      2.0,
+      0.0,
+      48.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 3870.50",
+        "employment <= 0.00",
+        "installment_commitment <= 2.00",
+        "0.00 < personal_status <= 3.00",
+        "property_magnitude <= 0.00",
+        "residence_since <= 2.00",
+        "job <= 1.00",
+        "purpose <= 3.00",
+        "housing <= 1.00",
+        "existing_credits <= 2.00",
+        "num_dependents <= 1.00",
+        "age > 33.00",
+        "other_payment_plans <= 1.00",
+        "foreign_worker <= 1.00",
+        "own_telephone <= 1.00",
+        "other_parties <= 2.00"
+      ],
+      "precision": 0.8973105134474327,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "savings_status >= 3.00",
+        "41.00 <= age <= 50.00"
+      ],
+      "precision": 0.9523809523809523,
+      "coverage": 0.042,
+      "n_samples": 42
+    },
+    "overlap": {
+      "n_in_positive": 32,
+      "n_in_negative": 0,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 48,
+    "instance": [
+      0.0,
+      39.0,
+      2.0,
+      2.0,
+      11760.0,
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      2.0,
+      3.0,
+      2.0,
+      32.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 3870.50",
+        "0.00 < own_telephone <= 1.00",
+        "existing_credits <= 1.00",
+        "employment > 0.00",
+        "residence_since <= 3.00",
+        "purpose <= 3.00",
+        "installment_commitment <= 2.00",
+        "0.00 < property_magnitude <= 3.00",
+        "age <= 33.00",
+        "0.00 < personal_status <= 3.00",
+        "foreign_worker <= 1.00",
+        "other_parties <= 2.00"
+      ],
+      "precision": 0.9120458891013384,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "2.00 <= credit_history <= 2.00",
+        "31.00 <= age <= 39.00"
+      ],
+      "precision": 0.96,
+      "coverage": 0.025,
+      "n_samples": 25
+    },
+    "overlap": {
+      "n_in_positive": 18,
+      "n_in_negative": 3,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 71,
+    "instance": [
+      0.0,
+      48.0,
+      2.0,
+      0.0,
+      6681.0,
+      4.0,
+      0.0,
+      4.0,
+      3.0,
+      2.0,
+      4.0,
+      2.0,
+      38.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 3870.50",
+        "purpose <= 3.00",
+        "1.00 < credit_history <= 3.00",
+        "employment <= 0.00",
+        "age > 33.00",
+        "3.00 < installment_commitment <= 4.00",
+        "foreign_worker <= 1.00",
+        "other_payment_plans <= 1.00",
+        "own_telephone <= 1.00",
+        "1.00 < property_magnitude <= 3.00",
+        "residence_since <= 4.00",
+        "0.00 < personal_status <= 3.00",
+        "other_parties <= 2.00",
+        "existing_credits <= 1.00",
+        "job <= 1.00",
+        "housing <= 1.00"
+      ],
+      "precision": 0.8503401360544217,
+      "coverage": 0.0012
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "2.00 <= credit_history <= 2.00",
+        "31.00 <= age <= 39.00"
+      ],
+      "precision": 0.96,
+      "coverage": 0.025,
+      "n_samples": 25
+    },
+    "overlap": {
+      "n_in_positive": 18,
+      "n_in_negative": 1,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 86,
+    "instance": [
+      1.0,
+      36.0,
+      3.0,
+      5.0,
+      15857.0,
+      2.0,
+      4.0,
+      2.0,
+      1.0,
+      0.0,
+      3.0,
+      0.0,
+      43.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 1.00",
+        "credit_amount > 3870.50",
+        "4.00 < purpose <= 6.00",
+        "own_telephone <= 0.00",
+        "employment > 1.00",
+        "existing_credits <= 1.00",
+        "num_dependents <= 1.00",
+        "age > 41.00",
+        "2.00 < residence_since <= 4.00",
+        "1.00 < credit_history <= 3.00",
+        "installment_commitment <= 4.00",
+        "property_magnitude <= 1.00",
+        "job <= 1.00",
+        "personal_status > 0.00",
+        "housing <= 1.00"
+      ],
+      "precision": 0.9717514124293786,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "purpose >= 5.00",
+        "43.00 <= age <= 43.00"
+      ],
+      "precision": 1.0,
+      "coverage": 0.005,
+      "n_samples": 5
+    },
+    "overlap": {
+      "n_in_positive": 4,
+      "n_in_negative": 0,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 129,
+    "instance": [
+      0.0,
+      36.0,
+      3.0,
+      2.0,
+      3711.0,
+      4.0,
+      0.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      0.0,
+      27.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 2246.50",
+        "employment <= 1.00",
+        "job <= 1.00",
+        "residence_since <= 2.00",
+        "own_telephone <= 0.00",
+        "housing <= 1.00",
+        "purpose <= 4.00",
+        "existing_credits <= 1.00",
+        "age <= 27.00",
+        "0.00 < personal_status <= 3.00",
+        "other_payment_plans <= 1.00",
+        "installment_commitment <= 4.00",
+        "other_parties <= 2.00",
+        "foreign_worker <= 1.00",
+        "savings_status > 2.00",
+        "property_magnitude <= 3.00",
+        "credit_history <= 3.00"
+      ],
+      "precision": 0.843680709534368,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "duration <= 47.00",
+        "3556.00 <= credit_amount <= 3914.00"
+      ],
+      "precision": 0.9545454545454546,
+      "coverage": 0.044,
+      "n_samples": 44
+    },
+    "overlap": {
+      "n_in_positive": 34,
+      "n_in_negative": 1,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 137,
+    "instance": [
+      0.0,
+      48.0,
+      3.0,
+      5.0,
+      5381.0,
+      4.0,
+      4.0,
+      3.0,
+      3.0,
+      2.0,
+      4.0,
+      2.0,
+      40.0,
+      0.0,
+      0.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 3870.50",
+        "existing_credits <= 1.00",
+        "personal_status > 0.00",
+        "purpose > 4.00",
+        "employment > 1.00",
+        "age > 27.00",
+        "property_magnitude > 0.00",
+        "other_payment_plans <= 1.00",
+        "own_telephone <= 1.00",
+        "foreign_worker <= 1.00",
+        "housing <= 1.00",
+        "credit_history > 1.00"
+      ],
+      "precision": 0.9501779359430605,
+      "coverage": 0.0012
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "duration <= 60.00",
+        "5248.00 <= credit_amount <= 5866.00"
+      ],
+      "precision": 0.95,
+      "coverage": 0.02,
+      "n_samples": 20
+    },
+    "overlap": {
+      "n_in_positive": 13,
+      "n_in_negative": 6,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 151,
+    "instance": [
+      0.0,
+      36.0,
+      2.0,
+      4.0,
+      2862.0,
+      0.0,
+      3.0,
+      4.0,
+      3.0,
+      2.0,
+      3.0,
+      2.0,
+      30.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "property_magnitude > 1.00",
+        "credit_amount > 2246.50",
+        "own_telephone <= 0.00",
+        "residence_since > 2.00",
+        "job <= 1.00"
+      ],
+      "precision": 0.9565217391304348,
+      "coverage": 0.0065
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "2675.00 <= credit_amount <= 3059.00",
+        "property_magnitude >= 2.00"
+      ],
+      "precision": 0.9629629629629629,
+      "coverage": 0.027,
+      "n_samples": 27
+    },
+    "overlap": {
+      "n_in_positive": 21,
+      "n_in_negative": 13,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 160,
+    "instance": [
+      0.0,
+      36.0,
+      3.0,
+      6.0,
+      4795.0,
+      2.0,
+      2.0,
+      4.0,
+      0.0,
+      2.0,
+      1.0,
+      2.0,
+      30.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 1.00",
+        "credit_amount > 3870.50",
+        "personal_status <= 0.00",
+        "1.00 < property_magnitude <= 3.00",
+        "3.00 < purpose <= 6.00",
+        "1.00 < credit_history <= 3.00",
+        "age <= 33.00",
+        "other_payment_plans <= 1.00",
+        "job <= 1.00",
+        "own_telephone <= 1.00",
+        "1.00 < employment <= 3.00",
+        "housing <= 1.00",
+        "residence_since <= 2.00",
+        "other_parties <= 2.00",
+        "2.00 < installment_commitment <= 4.00",
+        "foreign_worker <= 1.00",
+        "existing_credits <= 2.00",
+        "num_dependents <= 1.00"
+      ],
+      "precision": 0.910913140311804,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "4771.00 <= credit_amount <= 4811.00"
+      ],
+      "precision": 1.0,
+      "coverage": 0.005,
+      "n_samples": 5
+    },
+    "overlap": {
+      "n_in_positive": 3,
+      "n_in_negative": 1,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  },
+  {
+    "test_idx": 167,
+    "instance": [
+      0.0,
+      36.0,
+      2.0,
+      4.0,
+      7432.0,
+      2.0,
+      0.0,
+      2.0,
+      0.0,
+      2.0,
+      2.0,
+      1.0,
+      54.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "model_anchor": {
+      "rules": [
+        "duration > 24.00",
+        "checking_status <= 0.00",
+        "credit_amount > 3870.50",
+        "residence_since <= 2.00",
+        "3.00 < purpose <= 6.00",
+        "installment_commitment <= 2.00",
+        "property_magnitude > 0.00",
+        "job <= 1.00",
+        "credit_history > 1.00",
+        "age > 27.00",
+        "existing_credits <= 1.00",
+        "num_dependents <= 1.00",
+        "other_parties <= 2.00",
+        "own_telephone <= 0.00",
+        "other_payment_plans <= 1.00",
+        "savings_status <= 2.00"
+      ],
+      "precision": 0.9362745098039216,
+      "coverage": 0.0
+    },
+    "ground_truth_anchor": {
+      "rules": [
+        "7166.00 <= credit_amount <= 7485.00",
+        "installment_commitment <= 3.00"
+      ],
+      "precision": 1.0,
+      "coverage": 0.01,
+      "n_samples": 10
+    },
+    "overlap": {
+      "n_in_positive": 5,
+      "n_in_negative": 1,
+      "n_overlap": 0,
+      "overlap_pct_of_positive": 0.0,
+      "violation_strength": 0.0
+    }
+  }
+]
