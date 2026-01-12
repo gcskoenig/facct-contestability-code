@@ -1,0 +1,71 @@
+================================================================================
+MODEL ANCHOR EXAMPLE FOR PAPER (Test Index 1)
+================================================================================
+
+METHODOLOGY
+-----------
+Anchor extraction: Decision path from sklearn DecisionTreeClassifier
+Dataset: German Credit (OpenML ID=31, N=1000)
+Training set: 800 samples
+Test set: 200 samples
+
+EXPLAINED INSTANCE (Test Index 1)
+---------------------------------
+checking_status: 0.0
+duration: 36.0
+credit_history: 0.0
+purpose: 1.0
+credit_amount: 3990.0
+savings_status: 4.0
+employment: 2.0
+installment_commitment: 3.0
+personal_status: 0.0
+other_parties: 2.0
+residence_since: 2.0
+property_magnitude: 2.0
+age: 29.0
+other_payment_plans: 0.0
+housing: 1.0
+existing_credits: 1.0
+job: 2.0
+num_dependents: 1.0
+own_telephone: 0.0
+foreign_worker: 1.0
+
+True label: 1 (good credit)
+Model prediction: 0 (bad credit)
+Classification: False negative
+
+MODEL ANCHOR (Shallow Decision Tree, max_depth=3)
+-------------------------------------------------
+Rules (decision path to prediction):
+  - checking_status <= 1.50
+  - duration > 11.50
+  - duration > 31.50
+
+Support (training): 83
+Model precision: 1.0000 (predicts negative for 100.0% of samples)
+True positive rate in anchor region: 0.3494 (29/83)
+
+PRIOR KNOWLEDGE RULE
+--------------------
+Rules:
+  - duration > 31
+  - savings_status >= 3
+
+Support (training): 29
+Precision: 0.7931 (23/29)
+
+OVERLAP
+-------
+Overlap (training): 10
+Precision in overlap: 0.6000 (6/10)
+
+FEATURE ENCODINGS
+-----------------
+savings_status:
+  0: 100<=X<500
+  1: 500<=X<1000
+  2: <100
+  3: >=1000 (rich)
+  4: no known savings
